@@ -49,6 +49,7 @@ function generateRomanNum(userValue){
   let number = +userValue
   if(number < 1 || number > 4999){
     document.querySelector(".error").style.visibility = "visible";
+    romanDisplayDiv.innerHTML = " ";
   }else{
     document.querySelector(".error").style.visibility = "hidden";
     let result = "";
